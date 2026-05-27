@@ -46,21 +46,15 @@ export const metadata: Metadata = {
     "instalatii electrice apartamente"
   ],
   authors: [{ name: "Prime Electric" }],
-  viewport: "width=device-width, initial-scale=1",
   icons: {
-    icon: [
-      { url: "/icon.png", type: "image/png" },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/icon.png",
   },
-  openGraph: {
-    title: "Prime Electric Iași — Excelență în Instalații Electrice",
-    description: "Execuție profesională pentru proiecte rezidențiale și comerciale în Iași. De la tablouri electrice la automatizări de ultimă generație.",
-    url: "https://primeelectric.ro",
-    siteName: "Prime Electric",
-    locale: "ro_RO",
-    type: "website",
-  },
+};
+
+export const viewport = {
+  themeColor: "#0A0A0A",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
