@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -25,7 +26,7 @@ export default function Footer() {
           
           <div className="flex gap-4">
              <Button variant="outlineWhite" size="lg" className="rounded-full px-8 py-6 text-sm" asChild>
-                <a href="/contact">Trimite un brief</a>
+                <Link href="/contact">Trimite un brief</Link>
              </Button>
           </div>
         </div>
@@ -57,9 +58,9 @@ export default function Footer() {
           {/* MENIU RAPID */}
           <div className="flex flex-col gap-3">
             <span className="text-[10px] uppercase tracking-widest text-prime-text-mut mb-2">Navigație</span>
-            <a href="/proiecte" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Proiecte</a>
-            <a href="/#expertise" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Expertiză</a>
-            <a href="/despre" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Despre Noi</a>
+            <Link href="/proiecte" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Proiecte</Link>
+            <Link href="/#expertise" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Expertiză</Link>
+            <Link href="/despre" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Despre Noi</Link>
           </div>
 
           {/* SOCIALS */}
@@ -73,8 +74,8 @@ export default function Footer() {
           {/* LEGAL */}
           <div className="flex flex-col gap-3">
             <span className="text-[10px] uppercase tracking-widest text-prime-text-mut mb-2">Legal</span>
-            <a href="/legal/privacy" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Confidențialitate</a>
-            <a href="/legal/terms" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Termeni și Condiții</a>
+            <Link href="/legal/privacy" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Confidențialitate</Link>
+            <Link href="/legal/terms" className="text-sm text-zinc-300 uppercase tracking-widest hover:text-white transition-colors">Termeni și Condiții</Link>
           </div>
         </div>
 

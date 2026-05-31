@@ -8,6 +8,7 @@ import ExpertiseBento from "../components/expertise/ExpertiseBento";
 import type { Feature, FAQItem as FAQType, CTA } from "../types/landing";
 import ContentSections from "../components/layout/MainContentSection";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 // CORECTAT: Schimbat importul din folderul de componente pentru a nu crăpa la build-ul Next.js
 import ProjectsCinematicSlider from "../components/layout/ProjectsCinematicSlider";
 
@@ -105,11 +106,13 @@ export default function Home() {
             subtitle="Ridicăm instalațiile electrice standard la nivelul unei infrastructuri sofisticate, sigure și eficiente."
             ctas={ctas}
             media={
-              <img
+              <Image
                 src="/hero.jpg"
-                alt="Hero Background"
-                // CORECTAT: absolute în loc de fixed (pentru a nu bloca ecranul la scroll)
-                className="w-full h-full object-cover opacity-50 absolute inset-0"
+                alt="Instalații electrice de precizie - Prime Electric Iași"
+                fill
+                priority
+                className="object-cover opacity-50"
+                sizes="100vw"
               />
             }
           />

@@ -3,6 +3,7 @@ import React from "react";
 import type { CTA } from "../../types/landing";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 
 type Props = {
   title: string;
@@ -41,13 +42,13 @@ export default function Hero({ title, subtitle, ctas = [], media }: Props) {
 
           <div className="flex z-50 flex-col sm:flex-row items-center xl:items-end shrink-0 gap-3 sm:gap-6">
             <Button className="cursor-pointer w-full sm:w-auto text-center py-6 px-10 text-[10px] uppercase tracking-widest" variant="outlineWhite" size="default" asChild>
-              <a href="/contact">Inițiază un proiect</a>
+              <Link href="/contact">Inițiază un proiect</Link>
             </Button>
             <Button className="cursor-pointer font-light w-full sm:w-auto text-center py-6 px-10 text-[10px] uppercase tracking-widest" variant="ghostWhite" size="default" asChild>
-              <a href="/proiecte">
+              <Link href="/proiecte">
                 Vezi portofoliul
                 <ArrowRightIcon className="rtl:rotate-180 ml-2 h-4 w-4 inline" />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
