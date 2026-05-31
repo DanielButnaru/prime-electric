@@ -104,9 +104,9 @@ export default function ProjectsCinematicSlider() {
                   <span className="text-[10px] uppercase tracking-[0.25em] text-prime-text-mut font-mono">
                     {projects[currentIndex].tag}
                   </span>
-                  <h3 className="text-3xl uppercase md:text-5xl lg:text-5xlxl xl:text-6xl text-[#FFFBF5] max-w-2xl leading-[1.1]">
+                  <h2 className="text-3xl uppercase md:text-5xl lg:text-5xlxl xl:text-6xl text-[#FFFBF5] max-w-2xl leading-[1.1]">
                     {projects[currentIndex].title}
-                  </h3>
+                  </h2>
                   <p className="text-[10px] text-prime-text-mut uppercase tracking-[0.2em] mt-1">
                     {projects[currentIndex].location}
                   </p>
@@ -131,19 +131,21 @@ export default function ProjectsCinematicSlider() {
                     key={p.id}
                     aria-label={`Proiect ${i + 1}: ${p.title}`}
                     onClick={() => {
-                      // Pentru a "sări" la un slide prin dot-click ar necesita scrollTo pe window.
-                      // Funcționalitate opțională pentru o experiență avansată.
                       const targetScroll = containerRef.current
                         ? containerRef.current.offsetTop + (i / projects.length) * containerRef.current.offsetHeight
                         : 0;
                       window.scrollTo({ top: targetScroll, behavior: "smooth" });
                     }}
-                    className={`transition-all duration-500 rounded-full cursor-pointer ${
-                      i === currentIndex
-                        ? "w-2 h-2 bg-[#FFFBF5] hover:bg-[#FFFBF5]"
-                        : "w-1.5 h-1.5 bg-[#FFFBF5]/50 hover:bg-[#FFFBF5]/70"
+                    className={`transition-all duration-500 rounded-full cursor-pointer p-2 flex items-center justify-center -m-2 ${
+                      i === currentIndex ? "opacity-100" : "opacity-60 hover:opacity-100"
                     }`}
-                  />
+                  >
+                    <div className={`rounded-full transition-all duration-500 ${
+                      i === currentIndex
+                        ? "w-2.5 h-2.5 bg-[#FFFBF5]"
+                        : "w-2 h-2 bg-[#FFFBF5]/50"
+                    }`} />
+                  </button>
                 ))}
                 <span className="ml-auto text-[10px] text-prime-text-mut font-mono tabular-nums">
                   {String(currentIndex + 1).padStart(2, "0")} /{" "}

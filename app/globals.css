@@ -31,7 +31,7 @@
   --prime-bg-main: #FFFBF5;
   --prime-bg-sec: #FCF8F2;
   --prime-text-main: #18181b; /* zinc-900 */
-  --prime-text-mut: #71717a; /* zinc-500 */
+  --prime-text-mut: #52525b; /* zinc-600 */
   --prime-border: #e4e4e7; /* zinc-200 */
 }
 
@@ -48,7 +48,7 @@
   --prime-bg-main: #0B0B0C;
   --prime-bg-sec: #0E0E0F;
   --prime-text-main: #FAFAF9;
-  --prime-text-mut: #A1A1AA; /* zinc-400 */
+  --prime-text-mut: #D4D4D8; /* zinc-300 */
   --prime-border: rgba(255, 255, 255, 0.08);
 }
 
