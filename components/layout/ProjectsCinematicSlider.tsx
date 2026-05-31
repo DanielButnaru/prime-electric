@@ -42,26 +42,23 @@ const projects = [
 ];
 
 const TRANSITION = {
-  duration: 0.9,
-  ease: [0.76, 0, 0.24, 1] as const,
+  duration: 0.7,
+  ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
 };
 
 export default function ProjectsCinematicSlider() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Folosim scrollYProgress pentru a afla progresul prin container (0 -> 1)
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  // Updatăm index-ul curent în funcție de progresul scroll-ului
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    // Calculăm indexul: dacă avem 3 proiecte, împărțim în 3 segmente
     const newIndex = Math.min(
       projects.length - 1,
-      Math.floor(latest * projects.length)
+      Math.floor(latest * (projects.length + 0.1)) // Buffer mic pentru stabilitate pe final
     );
     if (newIndex !== currentIndex) {
       setCurrentIndex(newIndex);
@@ -95,14 +92,14 @@ export default function ProjectsCinematicSlider() {
             </span>
 
             <div className="relative h-64 md:h-120 w-full overflow-hidden">
-              <AnimatePresence mode="popLayout" initial={false}>
+              <AnimatePresence mode="wait" initial={false}>
                 <motion.div
                   key={currentIndex}
-                  initial={{ opacity: 0, y: 22, filter: "blur(6px)" }}
-                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                  exit={{ opacity: 0, y: -18, filter: "blur(4px)" }}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -15 }}
                   transition={TRANSITION}
-                  className="absolute inset-0 flex flex-col justify-center gap-3"
+                  className="absolute inset-0 flex flex-col justify-center gap-3 will-change-transform"
                 >
                   <span className="text-[10px] uppercase tracking-[0.25em] text-prime-text-mut font-mono">
                     {projects[currentIndex].tag}
@@ -158,15 +155,15 @@ export default function ProjectsCinematicSlider() {
 
           {/* ── COLOANA DREAPTA: IMAGINE ── */}
           <div className="w-full md:w-[55%] h-[58vh] md:h-full order-1 md:order-2
-                          relative overflow-hidden">
-            <AnimatePresence mode="popLayout" initial={false}>
+                          relative overflow-hidden bg-zinc-900">
+            <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={currentIndex}
-                initial={{ y: "100%", opacity: 0.6, scale: 1.04 }}
-                animate={{ y: "0%", opacity: 1, scale: 1 }}
-                exit={{ y: "0%", opacity: 0, scale: 0.97 }}
-                transition={TRANSITION}
-                className="absolute inset-0 w-full h-full z-10 origin-center overflow-hidden"
+                initial={{ opacity: 0, scale: 1.05 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ ...TRANSITION, duration: 0.6 }}
+                className="absolute inset-0 w-full h-full z-10 origin-center overflow-hidden will-change-[transform,opacity]"
               >
                 <Image
                   src={projects[currentIndex].image}
