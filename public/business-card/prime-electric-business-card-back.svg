@@ -3,43 +3,48 @@
   <desc id="desc">Verso carte de vizită Prime Electric, format tipar 91x61mm cu bleed 3mm.</desc>
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f2d38a"/>
+      <stop offset="0%" stop-color="#f5ddab"/>
       <stop offset="100%" stop-color="#c8963a"/>
     </linearGradient>
-    <pattern id="noise" width="26" height="26" patternUnits="userSpaceOnUse">
-      <circle cx="4" cy="4" r="1" fill="rgba(24,24,27,0.06)"/>
-      <circle cx="16" cy="12" r="1" fill="rgba(24,24,27,0.05)"/>
-      <circle cx="10" cy="22" r="1" fill="rgba(24,24,27,0.05)"/>
+    <radialGradient id="panelGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(468 296) rotate(90) scale(228 370)">
+      <stop offset="0%" stop-color="#f5ddab" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f5ddab" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="noise" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="rgba(24,24,27,0.06)"/>
+      <circle cx="18" cy="11" r="1" fill="rgba(24,24,27,0.05)"/>
+      <circle cx="11" cy="24" r="1" fill="rgba(24,24,27,0.05)"/>
     </pattern>
   </defs>
 
   <rect width="910" height="610" fill="#fffbf5"/>
   <rect width="910" height="610" fill="url(#noise)"/>
 
-  <g transform="translate(88 112)">
-    <text x="0" y="0" fill="#18181b" font-family="Cormorant Garamond, Georgia, serif" font-size="58" font-style="italic">Prime</text>
-    <text x="155" y="2" fill="#18181b" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="10">ELECTRIC</text>
-    <text x="2" y="38" fill="#52525b" font-family="JetBrains Mono, monospace" font-size="15" letter-spacing="2">INGINERIE ELECTRICĂ PENTRU PROIECTE PREMIUM</text>
+  <g transform="translate(88 104)">
+    <text x="0" y="0" fill="#18181b" font-family="Cormorant Garamond, Georgia, serif" font-size="60" font-style="italic">Prime</text>
+    <text x="158" y="2" fill="#18181b" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="10">ELECTRIC</text>
+    <text x="2" y="40" fill="#52525b" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="1.8">INGINERIE ELECTRICĂ PENTRU PROIECTE PREMIUM</text>
   </g>
 
-  <g transform="translate(88 202)">
-    <rect x="0" y="0" width="734" height="226" rx="24" fill="#0b0b0c"/>
-    <rect x="18" y="18" width="698" height="190" rx="16" fill="none" stroke="url(#accent)" stroke-width="2"/>
+  <g transform="translate(88 190)">
+    <rect x="0" y="0" width="734" height="234" rx="24" fill="#0b0b0c"/>
+    <rect x="0" y="0" width="734" height="234" rx="24" fill="url(#panelGlow)"/>
+    <rect x="18" y="18" width="698" height="198" rx="16" fill="none" stroke="url(#accent)" stroke-width="2"/>
 
-    <g transform="translate(36 52)">
-      <rect x="0" y="0" width="148" height="120" rx="20" fill="none" stroke="url(#accent)" stroke-width="3"/>
-      <path d="M82 18 48 72h28l-16 36 54-58H86l12-32Z" fill="url(#accent)"/>
+    <g transform="translate(40 43)">
+      <rect x="0" y="0" width="150" height="150" rx="24" fill="none" stroke="url(#accent)" stroke-width="4"/>
+      <path d="M84 23 50 80h27l-14 36 52-62H87l11-31Z" fill="url(#accent)"/>
     </g>
 
-    <text x="226" y="96" fill="#f2d38a" font-family="Montserrat, Arial, sans-serif" font-size="24" letter-spacing="4">AUTORIZAȚI</text>
-    <text x="226" y="146" fill="#fffbf5" font-family="Montserrat, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="8">ANRE</text>
-    <text x="226" y="180" fill="#d4d4d8" font-family="Montserrat, Arial, sans-serif" font-size="18" letter-spacing="1.8">EXECUȚIE CONFORM NORMATIVELOR ȘI STANDARDULUI DE SIGURANȚĂ</text>
+    <text x="228" y="96" fill="#f5ddab" font-family="Montserrat, Arial, sans-serif" font-size="23" letter-spacing="4">AUTORIZAȚI</text>
+    <text x="228" y="150" fill="#fffbf5" font-family="Montserrat, Arial, sans-serif" font-size="56" font-weight="700" letter-spacing="7">ANRE</text>
+    <text x="228" y="186" fill="#d4d4d8" font-family="Montserrat, Arial, sans-serif" font-size="15" letter-spacing="1.6">EXECUȚIE CONFORM NORMATIVELOR ȘI STANDARDULUI DE SIGURANȚĂ</text>
   </g>
 
-  <g transform="translate(88 480)" fill="#18181b" font-family="Montserrat, Arial, sans-serif">
-    <text x="0" y="0" font-size="18" letter-spacing="2">CONTACT</text>
-    <text x="0" y="34" font-size="28" font-weight="600" letter-spacing="1">0758669402 • 0756269143</text>
-    <text x="0" y="66" font-size="17" fill="#52525b" letter-spacing="1.4">office@prime-electric.ro • www.prime-electric.ro • Iași</text>
+  <g transform="translate(88 470)" fill="#18181b" font-family="Montserrat, Arial, sans-serif">
+    <text x="0" y="0" font-size="17" letter-spacing="2.2">CONTACT</text>
+    <text x="0" y="36" font-size="27" font-weight="600" letter-spacing="1">0758 669 402 • 0756 269 143</text>
+    <text x="0" y="68" font-size="16" fill="#52525b" letter-spacing="1.2">office@prime-electric.ro • www.prime-electric.ro • Iași</text>
   </g>
 
   <!-- Trim area: 85x55mm centered (3mm bleed each side) -->
