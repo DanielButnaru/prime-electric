@@ -2,56 +2,85 @@
   <title id="title">Prime Electric business card front</title>
   <desc id="desc">Față carte de vizită Prime Electric, format tipar 91x61mm cu bleed 3mm.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#08080a"/>
-      <stop offset="60%" stop-color="#121217"/>
-      <stop offset="100%" stop-color="#1b1b22"/>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbfcfe"/>
+      <stop offset="100%" stop-color="#eff2f7"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f5ddab"/>
-      <stop offset="100%" stop-color="#c8963a"/>
+    <linearGradient id="blueEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d2a58"/>
+      <stop offset="100%" stop-color="#031227"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(772 132) rotate(121.65) scale(362 432)">
-      <stop offset="0%" stop-color="#f2d38a" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#f2d38a" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9b2a"/>
+      <stop offset="100%" stop-color="#e46f00"/>
+    </linearGradient>
+    <linearGradient id="night" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#173a6a"/>
+      <stop offset="100%" stop-color="#061426"/>
+    </linearGradient>
   </defs>
 
-  <rect width="910" height="610" fill="url(#bg)"/>
-  <rect width="910" height="610" fill="url(#grid)"/>
-  <rect width="910" height="610" fill="url(#glow)"/>
+  <rect width="910" height="610" fill="url(#paper)"/>
 
-  <g transform="translate(86 96)">
-    <text x="0" y="0" fill="#fffbf5" font-family="Cormorant Garamond, Georgia, serif" font-size="70" font-style="italic">Prime</text>
-    <text x="184" y="4" fill="#ececef" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="10">ELECTRIC</text>
-    <text x="2" y="46" fill="#b8b8bf" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2">INSTALAȚII ELECTRICE • SMART HOME • TABLOURI</text>
+  <g stroke="#95a3b7" stroke-width="1" opacity="0.45" fill="none">
+    <path d="M0 538 154 430 326 430 470 538"/>
+    <path d="M38 510 134 444 300 444 418 510"/>
+    <path d="M74 482 160 424 280 424 372 482"/>
+    <path d="M64 250 64 510"/>
+    <path d="M96 230 96 488"/>
+    <path d="M132 208 132 460"/>
+    <path d="M168 188 168 438"/>
+    <path d="M208 164 208 412"/>
+    <path d="M252 194 252 414"/>
+    <path d="M302 232 302 446"/>
+    <path d="M44 332 208 246 354 304"/>
+    <path d="M42 364 206 278 356 336"/>
   </g>
 
-  <g transform="translate(86 242)" font-family="Montserrat, Arial, sans-serif">
-    <text x="0" y="0" fill="#a1a1aa" font-size="16" letter-spacing="3">CONTACT DIRECT</text>
-    <text x="0" y="58" fill="#fffbf5" font-size="40" font-weight="600" letter-spacing="1">0758 669 402</text>
-    <text x="0" y="110" fill="#fffbf5" font-size="40" font-weight="600" letter-spacing="1">0756 269 143</text>
+  <polygon points="610,0 910,0 910,610 560,610 486,305" fill="url(#blueEdge)"/>
+  <polygon points="602,0 618,0 516,305 620,610 604,610 496,305" fill="url(#orange)"/>
+  <polygon points="620,40 886,54 850,566 602,536 548,305" fill="url(#night)" opacity="0.95"/>
+
+  <g stroke="#5f7da3" stroke-width="1.3" opacity="0.5" fill="none">
+    <path d="M628 428 814 428 856 394"/>
+    <path d="M636 478 824 478 864 444"/>
+    <path d="M652 320 780 320 818 286"/>
+    <path d="M662 354 790 354 830 318"/>
+    <path d="M690 230 818 230 852 198"/>
+    <path d="M638 520 638 242"/>
+    <path d="M682 524 682 228"/>
+    <path d="M726 530 726 212"/>
+    <path d="M772 536 772 196"/>
+    <path d="M818 542 818 184"/>
   </g>
 
-  <g transform="translate(86 486)" fill="#cfcfd4" font-family="Montserrat, Arial, sans-serif">
-    <text x="0" y="0" font-size="16" letter-spacing="2.2">office@prime-electric.ro</text>
-    <text x="0" y="30" font-size="16" letter-spacing="2.2">www.prime-electric.ro • Iași, România</text>
+  <g transform="translate(268 124)">
+    <text x="0" y="0" fill="#10213f" font-family="Montserrat, Arial, sans-serif" font-size="78" font-weight="700">Prime</text>
+    <text x="236" y="0" fill="#0f69d8" font-family="Montserrat, Arial, sans-serif" font-size="78" font-weight="700">Electric</text>
+    <path d="M220 -14 196 30h16l-11 28 34-40h-17l8-32Z" fill="url(#orange)"/>
+    <line x1="0" y1="34" x2="498" y2="34" stroke="#8ba0bf" stroke-width="1.4"/>
+    <text x="0" y="86" fill="#24344f" font-family="Montserrat, Arial, sans-serif" font-size="18" letter-spacing="9">SIGURANȚĂ • CALITATE • ENERGIE</text>
   </g>
 
-  <g transform="translate(622 338)">
-    <rect x="0" y="0" width="206" height="202" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(242,211,138,0.45)" stroke-width="1.5"/>
-    <g transform="translate(41 42)">
-      <rect x="0" y="0" width="124" height="124" rx="22" fill="none" stroke="url(#gold)" stroke-width="4"/>
-      <path d="M70 20 42 72h22l-12 29 43-50H73l9-31Z" fill="url(#gold)"/>
-    </g>
-    <text x="103" y="178" text-anchor="middle" fill="#f5ddab" font-family="Montserrat, Arial, sans-serif" font-size="18" letter-spacing="2.8">ANRE</text>
+  <g transform="translate(288 266)" font-family="Montserrat, Arial, sans-serif">
+    <text x="0" y="0" fill="#283a59" font-size="20" letter-spacing="1">PERSONAL</text>
+    <text x="0" y="32" fill="#283a59" font-size="20" letter-spacing="1">AUTORIZAT</text>
+    <text x="0" y="76" fill="#115fcb" font-size="58" font-weight="700">ANRE</text>
+    <line x1="192" y1="-8" x2="192" y2="164" stroke="#8fa2be" stroke-width="1"/>
   </g>
 
-  <!-- Trim area: 85x55mm centered (3mm bleed each side) -->
-  <rect x="30" y="30" width="850" height="550" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1.4" stroke-dasharray="8 8"/>
-  <!-- Safe area: 79x49mm -->
-  <rect x="60" y="60" width="790" height="490" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="6 10"/>
+  <g transform="translate(520 248)">
+    <polygon points="84,0 168,146 0,146" fill="#f6f8fc" stroke="#5d7395" stroke-width="2"/>
+    <polygon points="84,0 131,78 37,78" fill="#c3202d"/>
+    <polygon points="0,146 84,0 37,78" fill="#f5c700"/>
+    <polygon points="168,146 84,0 131,78" fill="#0b4ea1"/>
+    <circle cx="84" cy="92" r="30" fill="#ffffff" stroke="#4d6180" stroke-width="2"/>
+    <text x="84" y="99" text-anchor="middle" fill="#111827" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="700">ANRE</text>
+  </g>
+
+  <text x="290" y="492" fill="#25344d" font-family="Montserrat, Arial, sans-serif" font-size="45" font-weight="600">Autorizație ANRE pentru</text>
+  <text x="290" y="538" fill="#25344d" font-family="Montserrat, Arial, sans-serif" font-size="45" font-weight="600">execuție lucrări electrice</text>
+
+  <rect x="30" y="30" width="850" height="550" fill="none" stroke="rgba(36,52,79,0.24)" stroke-width="1.4" stroke-dasharray="8 8"/>
+  <rect x="60" y="60" width="790" height="490" fill="none" stroke="rgba(36,52,79,0.15)" stroke-width="1" stroke-dasharray="6 10"/>
 </svg>
