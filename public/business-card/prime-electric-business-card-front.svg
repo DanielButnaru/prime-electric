@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91mm" height="61mm" viewBox="0 0 910 610" role="img" aria-labelledby="title desc">
+  <title id="title">Prime Electric business card front</title>
+  <desc id="desc">Față carte de vizită Prime Electric, format tipar 91x61mm cu bleed 3mm.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#1a1a1f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2d38a"/>
+      <stop offset="100%" stop-color="#c8963a"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="910" height="610" fill="url(#bg)"/>
+  <rect width="910" height="610" fill="url(#grid)" opacity="0.6"/>
+  <circle cx="830" cy="88" r="170" fill="rgba(255,255,255,0.03)"/>
+
+  <g transform="translate(92 114)">
+    <text x="0" y="0" fill="#fffbf5" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-style="italic" letter-spacing="1">Prime</text>
+    <text x="166" y="4" fill="#f4f4f5" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="500" letter-spacing="10">ELECTRIC</text>
+    <text x="2" y="36" fill="#d4d4d8" font-family="JetBrains Mono, monospace" font-size="15" letter-spacing="2.2">INSTALAȚII ELECTRICE • SMART HOME • TABLOURI</text>
+  </g>
+
+  <g transform="translate(92 238)" fill="#fffbf5" font-family="Montserrat, Arial, sans-serif">
+    <text x="0" y="0" font-size="17" letter-spacing="3" fill="#a1a1aa">CONTACT DIRECT</text>
+    <text x="0" y="58" font-size="42" font-weight="600" letter-spacing="1">0758669402</text>
+    <text x="0" y="112" font-size="42" font-weight="600" letter-spacing="1">0756269143</text>
+  </g>
+
+  <g transform="translate(92 496)" fill="#d4d4d8" font-family="Montserrat, Arial, sans-serif">
+    <text x="0" y="0" font-size="17" letter-spacing="2.8">office@prime-electric.ro</text>
+    <text x="0" y="32" font-size="17" letter-spacing="2.8">www.prime-electric.ro • Iași, România</text>
+  </g>
+
+  <g transform="translate(610 442)">
+    <rect x="0" y="0" width="216" height="98" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#accent)" stroke-width="2"/>
+    <text x="108" y="40" text-anchor="middle" fill="#f2d38a" font-family="Montserrat, Arial, sans-serif" font-size="20" letter-spacing="2">AUTORIZAȚI</text>
+    <text x="108" y="70" text-anchor="middle" fill="#fffbf5" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="4">ANRE</text>
+  </g>
+
+  <!-- Trim area: 85x55mm centered (3mm bleed each side) -->
+  <rect x="30" y="30" width="850" height="550" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.4" stroke-dasharray="8 8"/>
+  <!-- Safe area: 79x49mm -->
+  <rect x="60" y="60" width="790" height="490" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="6 10"/>
+</svg>
